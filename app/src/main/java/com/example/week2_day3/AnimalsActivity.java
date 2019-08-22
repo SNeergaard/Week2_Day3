@@ -22,9 +22,9 @@ public class AnimalsActivity extends AppCompatActivity{
         setContentView(R.layout.activity_animals);
         Intent animal_intent = getIntent();
         Bundle animalBundle = animal_intent.getExtras();
-        ArrayList<Animal> biomeArrayList = animalBundle.getParcelableArrayList("animal");
-        ArrayAdapter<String> animalAdapter = new ArrayAdapter<String>(this, R.layout.recycleciew_item, biomeArrayList);
-        rvAnimal.setAdapter(animalAdapter);
+        //ArrayList<Animal> biomeArrayList = animalBundle.getParcelableArrayList("animal");
+        //ArrayAdapter<String> animalAdapter = new ArrayAdapter<String>(this, R.layout.recycleciew_item, biomeArrayList);
+        //rvAnimal.setAdapter(animalAdapter);
     }
 
 

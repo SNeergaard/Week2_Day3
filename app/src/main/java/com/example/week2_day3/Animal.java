@@ -45,7 +45,9 @@ public class Animal implements Parcelable{
 //        }
 //    };
 //
-    public String getAnimal() { return animal; }
+    public String getAnimal() {
+        return animal;
+    }
 
     public void setAnimal(String animal) {
         this.animal = animal;
