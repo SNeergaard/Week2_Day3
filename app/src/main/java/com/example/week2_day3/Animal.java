@@ -3,7 +3,7 @@ package com.example.week2_day3;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Animal implements Parcelable{
+public class Animal implements Parcelable {
 
     private String biome;
     private String animal;
@@ -81,7 +81,15 @@ public class Animal implements Parcelable{
         parcel.writeString(description);
     }
 
-//    @Override
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "biome='" + biome + '\'' +
+                ", animal='" + animal + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+    //    @Override
 //    public int describeContents(){
 //        return 0;
 //    }

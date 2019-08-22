@@ -58,7 +58,7 @@ public class AnimalRCAdapter extends RecyclerView.Adapter<AnimalRCAdapter.ViewHo
         public void onClick(View view) {
             Intent detailsIntent = new Intent(view.getContext(), Animal.class);
             Bundle bundle = new Bundle();
-            bundle.putParcelableArray("animal", itemAnimal);
+            bundle.putParcelable("animal", itemAnimal);
             detailsIntent.putExtras(bundle);
             view.getContext().startActivity(detailsIntent);
         }
