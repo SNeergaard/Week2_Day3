@@ -1,1 +1,1 @@
-# Week2_Day3
+# I made a general Array list with all of the information and widdled it down to a single animal through constently bundleing the all of the info that was to be passed on. unfortunatly I only finished the listview and made it half way through the recycler view.
