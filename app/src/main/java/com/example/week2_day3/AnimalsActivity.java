@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class AnimalsActivity extends AppCompatActivity{
     RecyclerView rvAnimal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +22,8 @@ public class AnimalsActivity extends AppCompatActivity{
         setContentView(R.layout.activity_animals);
         Intent animal_intent = getIntent();
         Bundle animalBundle = animal_intent.getExtras();
-        ArrayList<> animalArray = animalBundle.getParcelableArray("animal");
-        ArrayAdapter<String> animalAdapter = new ArrayAdapter<>(this, R.layout.recycleciew_item, animalArray);
+        ArrayList<Animal> biomeArrayList = animalBundle.getParcelableArrayList("animal");
+        ArrayAdapter<String> animalAdapter = new ArrayAdapter<String>(this, R.layout.recycleciew_item, biomeArrayList);
         rvAnimal.setAdapter(animalAdapter);
     }
 
