@@ -8,17 +8,21 @@ public class Animal implements Parcelable {
     private String biome;
     private String animal;
     private String description;
+    private int sound;
 
-    public Animal(String biome, String animal, String description){
+
+    public Animal(String biome, String animal, String description, Integer sound){
         this.biome = biome;
         this.animal = animal;
         this.description = description;
+        this.sound = sound;
     }
 
     protected Animal(Parcel in) {
         biome = in.readString();
         animal = in.readString();
         description = in.readString();
+        sound = in.readInt();
     }
 
     public static final Creator<Animal> CREATOR = new Creator<Animal>() {
@@ -45,9 +49,13 @@ public class Animal implements Parcelable {
 //        }
 //    };
 //
-    public String getAnimal() {
-        return animal;
-    }
+
+
+    public void setSound(int sound) { this.sound = sound; }
+
+    public int  getSound() { return sound; }
+
+    public String getAnimal() { return animal; }
 
     public void setAnimal(String animal) {
         this.animal = animal;
@@ -79,6 +87,7 @@ public class Animal implements Parcelable {
         parcel.writeString(biome);
         parcel.writeString(animal);
         parcel.writeString(description);
+        parcel.writeInt(sound);
     }
 
     @Override

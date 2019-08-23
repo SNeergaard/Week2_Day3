@@ -3,6 +3,7 @@ package com.example.week2_day3;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telecom.Call;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import java.util.ArrayList;
 import java.util.zip.Inflater;
 
 public class AnimalRCAdapter extends RecyclerView.Adapter<AnimalRCAdapter.ViewHolder>{
+
+
     private ArrayList<Animal> animalArrayList;
     //I had the option to auto select animalArrayList1
     public AnimalRCAdapter(ArrayList<Animal> animalArrayList) {this.animalArrayList = animalArrayList;}
@@ -56,9 +59,15 @@ public class AnimalRCAdapter extends RecyclerView.Adapter<AnimalRCAdapter.ViewHo
 
         @Override
         public void onClick(View view) {
-            Intent detailsIntent = new Intent(view.getContext(), Animal.class);
+           // animalArrayList
+            tvAnimal.getText();
+//            Intent animal_intent = getIntent();
+//            Bundle animalBundle = animal_intent.getExtras();
+//            ArrayList<Animal> biomeArrayList = animalBundle.getParcelableArrayList("animal");
+//            ArrayList<Animal> detailList = new ArrayList<>();
+            Intent detailsIntent = new Intent(view.getContext(), DetailActivity.class);
             Bundle bundle = new Bundle();
-            bundle.putParcelable("animal", itemAnimal);
+            bundle.putParcelable("desc", itemAnimal);
             detailsIntent.putExtras(bundle);
             view.getContext().startActivity(detailsIntent);
         }

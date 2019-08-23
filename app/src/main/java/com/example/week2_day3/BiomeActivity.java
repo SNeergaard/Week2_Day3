@@ -48,18 +48,18 @@ public class BiomeActivity extends AppCompatActivity {
 
     private ArrayList<Animal> getanimallist(){
         if (animalList.isEmpty()) {
-            animalList.add(new Animal("Arctic", "Polar Bear", "YO! That white bear's a unit!"));
-            animalList.add(new Animal("Arctic", "Penguin", "These birds gave up wings for flipers, because they are extra"));
-            animalList.add(new Animal("Arctic", "Harp Seal", "the cutest little floofest seal around"));
-            animalList.add(new Animal("Jungle", "Monkey", "little monkey fella"));
-            animalList.add(new Animal("Jungle", "Tiger", "this ferocious cat screams that the start of movies"));
-            animalList.add(new Animal("Jungle", "Lemur", "The hopping star of Zuboomafoo"));
-            animalList.add(new Animal("Savannah", "Hyena", "They are having a giggle because im not sure if this is a dog or not."));
-            animalList.add(new Animal("Savannah", "Elephent", "These are the biggest land animal around. They also think you are cute:)"));
-            animalList.add(new Animal("Savannah", "Warthog", "you will need a large gun if 30-50 of these show up"));
-            animalList.add(new Animal("Desert", "Rattle Snake", "Watch out this danger noodle plays maracas"));
-            animalList.add(new Animal("Desert", "Coyote", "This boi will never catch a roadrunner"));
-            animalList.add(new Animal("Desert", "Bat", "Against popular belief probably not here to suck you blood."));
+            animalList.add(new Animal("Arctic", "Polar Bear", "YO! That white bear's a unit!", R.raw.bear_polar));
+            animalList.add(new Animal("Arctic", "Penguin", "These birds gave up wings for flipers, because they are extra", R.raw.penguin3));
+            animalList.add(new Animal("Arctic", "Harp Seal", "the cutest little floofest seal around", R.raw.harpseals));
+            animalList.add(new Animal("Jungle", "Monkey", "little monkey fella", R.raw.monkey1));
+            animalList.add(new Animal("Jungle", "Tiger", "this ferocious cat screams that the start of movies", R.raw.tiger6));
+            animalList.add(new Animal("Jungle", "Lemur", "The hopping star of Zuboomafoo", R.raw.lemur4));
+            animalList.add(new Animal("Savannah", "Hyena", "They are having a giggle because im not sure if this is a dog or not.", R.raw.hyena));
+            animalList.add(new Animal("Savannah", "Elephent", "These are the biggest land animal around. They also think you are cute:)", R.raw.elephantcub));
+            animalList.add(new Animal("Savannah", "Warthog", "you will need a large gun if 30-50 of these show up", R.raw.hog11));
+            animalList.add(new Animal("Desert", "Rattle Snake", "Watch out this danger noodle plays maracas", R.raw.rattlesnakerattle));
+            animalList.add(new Animal("Desert", "Coyote", "This boi will never catch a roadrunner", R.raw.coyote1));
+            animalList.add(new Animal("Desert", "Bat", "Against popular belief probably not here to suck you blood.", R.raw.bat2));
         }
         return animalList;
     }

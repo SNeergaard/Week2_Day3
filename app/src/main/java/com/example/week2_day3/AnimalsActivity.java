@@ -35,6 +35,11 @@ public static final String TAG = "LOG ANIMIAL";
         //adapter
         AnimalRCAdapter animalRCAdapter = new AnimalRCAdapter(biomeArrayList);
         rvAnimal.setAdapter(animalRCAdapter);
+        //onclick listener
+
+
+
+
 
 
 
